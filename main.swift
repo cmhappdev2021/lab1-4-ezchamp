@@ -81,8 +81,24 @@ else {
 
 
 // You want your fitness tracking app to give as much encouragement as possible to your users. Create a variable steps equal to the number of steps you guess you've taken today. Create a constant stepGoal equal to 10,000. Write an if-else statement that will print "You're almost halfway there!" if steps is less than half of stepGoal, and will print "You're over halfway there!" if steps is greater than half of stepGoal.
+
 let stepGoal = 10000
 var steps = 3500
+
+if steps < stepGoal / 2 {
+  print("You're almost halfway there!")
+}
+else if steps > stepGoal / 2 &&  steps < stepGoal {
+  print("You're over halfway there!")
+}
+else if steps == stepGoal {
+  print("You're there")
+}
+else {
+  print("Are you even walking?")
+}
+
+
 // Now create a new, but similar, if-else-if statement that prints "Way to get a good start today!" if steps is less than a tenth of stepGoal, prints "You're almost halfway there!" if steps is less than half of stepGoal, and prints "You're over halfway there!" if steps is greater than half of stepGoal.
 
 /* Imagine you're going to dinner with friends and are struggling to decide where to go. Two of you have very strong opinions and have clearly laid out your requirements for dinner as follows:
