@@ -69,6 +69,17 @@ else {
 // dollars has been updated below to have a value of 105. Write an an if-else-if statement that prints "Sorry, kid. You're broke!" if dollars has a value of 0, prints "You've got some spending money!" if dollars is less than 100, and prints "Looks to me like you're rich!" otherwise. Observe what is printed to the console.
 dollars = 105
 
+if dollars <= 0 {
+  print("Sorry, kid. You're broke!")
+}
+else if dollars < 100 {
+  print("You've got some spending money!")
+}
+else {
+  print("Looks to me like you're rich!")
+}
+
+
 // You want your fitness tracking app to give as much encouragement as possible to your users. Create a variable steps equal to the number of steps you guess you've taken today. Create a constant stepGoal equal to 10,000. Write an if-else statement that will print "You're almost halfway there!" if steps is less than half of stepGoal, and will print "You're over halfway there!" if steps is greater than half of stepGoal.
 let stepGoal = 10000
 var steps = 3500
