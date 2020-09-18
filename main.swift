@@ -98,8 +98,23 @@ else {
   print("Are you even walking?")
 }
 
-
 // Now create a new, but similar, if-else-if statement that prints "Way to get a good start today!" if steps is less than a tenth of stepGoal, prints "You're almost halfway there!" if steps is less than half of stepGoal, and prints "You're over halfway there!" if steps is greater than half of stepGoal.
+
+if steps < stepGoal / 10 {
+  print("Way to get a good start today!")
+}
+else if steps < stepGoal / 2 && steps > stepGoal / 10 {
+  print("You're almost hlafway there!")
+}
+else if steps > stepGoal / 2 && steps < stepGoal {
+  print("You're over halfway there!")
+}
+else if steps == stepGoal {
+  print("You're there")
+}
+else {
+  print("Are you even walking?")
+}
 
 /* Imagine you're going to dinner with friends and are struggling to decide where to go. Two of you have very strong opinions and have clearly laid out your requirements for dinner as follows:
 
