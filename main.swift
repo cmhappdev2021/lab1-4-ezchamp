@@ -192,6 +192,13 @@ switch leaguePosition {
 
 // Write a new switch statement that prints "Medal winner" if leaguePosition is within the range of 1-3. Otherwise, print "No medal awarded".
 
+switch leaguePosition {
+  case 1, 2, 3:
+    print("Medal winner!")
+  default:
+    print("No medal awarded.")
+}
+
 /* If you completed the Target Heart Rate exercise, you showed different statements to the user based on whether or not the user's heart rate was inside of a target zone. Now you decide to just tell them what zone they are in rather than tell them what zone to be in.
 
 Write a switch statement that will print different statements based on what range currentHR falls into. Below is a list of ranges and the associated statements
