@@ -122,6 +122,7 @@ You want to eat somewhere that has either fish or pizza
 Your friend wants to eat somewhere with vegan options.
 
 Another friend brings up a restaurant she thinks will fit both of your criteria. This restaurant's attributes are represented by a few constants below. Write an if-else statement that will print "Let's go!" if the restaurant's attributes match the group's dietary requirements, and otherwise will print "Sorry, we'll have to think of somewhere else." */
+
 let hasFish = true
 let hasPizza = false
 let hasVegan = true
@@ -133,12 +134,19 @@ else {
   print("Sorry, we'll have to think of somewhere else.")
 }
 
-
-
 // Imagine you're trying to decide whether or not to go on a walk. You decide that you'll go on a walk if it's not raining or if it's 82 degress or warmer and sunny out. Create a constant isNiceWeather that is equal to an expression that evaluates to a boolean indicating whether or not the weather is nice enough for you to go for a walk. Write an if statement that will print "I'm going for a walk!" if the weather is nice.
-let temp = 82
+
+let tempGreaterOrEqualTo82 = true
 let isRaining = true
 let isSunny = true
+let isNiceWeather:Bool = true
+
+if isNiceWeather != isRaining || isNiceWeather == isSunny && isNiceWeather == tempGreaterOrEqualTo82 {
+  print("I'm going for a walk!")
+}
+else {
+  print("I'm just going to stay inside")
+}
 
 /* You decide that you want your fitness tracker to have a feature that helps users stay inside specified heart rate zones while they are working out. You'll display a message to the user telling them to go a little faster to increase their heart rate if they are below the target, tell them that they are spot on if they are in the target, and tell them to slow it down a little if they are over the target.
 
