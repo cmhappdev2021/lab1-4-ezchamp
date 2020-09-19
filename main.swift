@@ -1,3 +1,4 @@
+
 /*For each of the logical expressions below, print out what you think the resulting value will be (true or false). Then print out the actual expression to see if you were right. An example has been provided below.
 
 43 == 53
@@ -175,6 +176,19 @@ else {
 }
  
 // Imagine you're on a baseball team nearing the end of the season. Create a leaguePosition constant with a value of 1. Using a switch statement, print "Champions!" if the leaguePosition is 1, "Runners up" if the value is 2, "Third place" if the value is 3, and "Bad season!" in all other cases.
+
+let leaguePosition = 1
+
+switch leaguePosition {
+  case 1:
+    print("Champions!")
+  case 2:
+    print("Runners up. Meh")
+  case 3:
+    print("Third place. I don't like where this is going.")
+  default:
+    print("Our team is trash!")
+}
 
 // Write a new switch statement that prints "Medal winner" if leaguePosition is within the range of 1-3. Otherwise, print "No medal awarded".
 
