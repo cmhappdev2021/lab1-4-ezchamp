@@ -147,14 +147,33 @@ if isNiceWeather != isRaining || isNiceWeather == isSunny && isNiceWeather == te
 else {
   print("I'm just going to stay inside")
 }
+//Had some trouble here. I think a switch statement would work better. The problem was that there was a mixture of Interagers and Booleans which made lots of errors; therefore, I had to change one of the constants from an Int to a Bool.
 
 /* You decide that you want your fitness tracker to have a feature that helps users stay inside specified heart rate zones while they are working out. You'll display a message to the user telling them to go a little faster to increase their heart rate if they are below the target, tell them that they are spot on if they are in the target, and tell them to slow it down a little if they are over the target.
 
 Create constants isInTarget, isBelowTarget, and isAboveTarget that equal expressions that evaluate to whether or not currentHR is between the lower and upper bounds, below the lower bound, and above the upper bound, respectively. Then write an if-else-if statement that will print "You're right on track!" if the user is inside the target zone, "You're doing great, but try to push it a bit!" if the user is below the target zone, and "You're on fire! Slow it down just a bit." if the user is above the target zone. */
+
 let targetLowerBound = 120
 let targetUpperBound = 150
 let currentHR = 147
 
+let isInTarget = true
+let isBelowTarget = false
+let isAboveTarget = false
+
+if currentHR < targetLowerBound {
+  print("You're doing great, but try to push it a bit!")
+}
+else if currentHR > targetUpperBound {
+  print("You're about to experience cardiac arrest! Slow it down just a bit.")
+}
+else if currentHR > targetLowerBound && currentHR < targetUpperBound {
+  print("You're right on track!")
+}
+else {
+  print("You must not have a heart because I'm getting nothing.")
+}
+ 
 // Imagine you're on a baseball team nearing the end of the season. Create a leaguePosition constant with a value of 1. Using a switch statement, print "Champions!" if the leaguePosition is 1, "Runners up" if the value is 2, "Third place" if the value is 3, and "Bad season!" in all other cases.
 
 // Write a new switch statement that prints "Medal winner" if leaguePosition is within the range of 1-3. Otherwise, print "No medal awarded".
