@@ -254,3 +254,11 @@ if steps < stepGoal / 2 {
 } else {
     print("Over halfway!")
 }
+
+var stepOperator:String = "Obama" 
+
+stepOperator = steps < stepGoal / 2 ? "Almost halfway!": "Over halfway!"
+
+print(stepOperator)
+
+//Completed Project :)
