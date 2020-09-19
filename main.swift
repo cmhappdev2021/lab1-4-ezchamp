@@ -211,6 +211,23 @@ Write a switch statement that will print different statements based on what rang
 
 If currentHR is above the listed zones, print some kind of warning asking the user to slow down. */
 
+switch currentHR {
+  case 100...120: 
+    print("You are in the Very Light zone. Activity in this zone helps with recovery.")
+  case 121...140:
+    print("You are in the Light zone. Activity in this zone helps improve basice endurance and fat burning.")
+  case 141...160:
+    print("You are in the Moderate zone. Activity in this zone helps improve aerobic fitness.")
+  case 161...180:
+    print("You are in the Hard zone. Activity in this zone increases maximum performance capacity for shorter sessions.")
+  case 181...200: 
+    print("You are in the Maximum zone. Activity in this zone helps fit athletes develop speed.")
+  case 200...:
+    print("You must be dying. Slow down.")
+  default:
+    print("You are most likely not active right now.")
+}
+
 // Remember the currentHR constant already exists and is 147
 
 // Refactor the code below so that largest is declared and assigned to in one line using the ternary operator.
